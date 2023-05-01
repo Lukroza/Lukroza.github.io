@@ -1,0 +1,26 @@
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  pointer-events: none;
+}
+#lorem {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: auto;
+  background-color: rgba(189, 118, 38, 0.514);
+  border-radius: 10px;
+  height: 80px;
+  width: 550px;
+  word-spacing: 5px;
+  text-align: right;
+  border: 3px black solid;
+  padding: 5px;
+
+  position: relative;
+}
+.div1 {
+  border: 1px dotted red;
+  height: 800px;
+}
