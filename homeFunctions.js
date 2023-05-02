@@ -1,14 +1,29 @@
+//Scrolling animation--------------------------
+// Create a new IntersectionObserver that takes a callback function as its argument
+const observer = new IntersectionObserver((entries) => {
+  // Loop through each entry that the observer observes
+  entries.forEach((entry) => {
+    // Check if the entry is currently intersecting with the viewport
+    if(entry.isIntersecting){
+      // If the entry is intersecting, add the 'show' class to the entry's target element
+      entry.target.classList.add('show');
+    }else{
+      // If the entry is not intersecting, remove the 'show' class from the entry's target element
+      entry.target.classList.remove('show');
+    }
+  })
+})
+
+// Select all elements with the class 'hid'
+const hidden = document.querySelectorAll('.hid');
+// Loop through each 'hid' element and observe it with the IntersectionObserver
+hidden.forEach((el) => observer.observe(el));
+//Scrolling animation--------------------------
+
+
+
 
 const dots = [];
-
-
-document.addEventListener('mousemove', (event) => {
-  const x = event.clientX;
-  const y = event.clientY;
-  console.log(`Mouse position: (${x}, ${y})`);
-});
-
-
 document.addEventListener('mousemove', (event) => {
   const dot = document.createElement('div');
   dot.className = 'dot';
@@ -42,35 +57,18 @@ document.addEventListener('mousemove', (event) => {
 
   requestAnimationFrame(animateDot);
   dots.push(dot);
-
+  
 });
+const elem = window.getComputedStyle(document.querySelector('.test'), ':hover').getPropertyValue('color')
+document.addEventListener('click', (event) => {
+    var text = `1px 1px 1px #919191, 1px 1px 1px #919191, 1px 2px 1px #919191,
+    1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191,
+    1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191,
+    1px 9px 1px #919191, 1px 10px 1px #919191, 1px 11px 1px #919191,
+    1px 15px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);`;
+    elem = "#919191"
+  });
 
-// setInterval(() => {
-//   dots.forEach((dot) => {
-//     const x = parseInt(dot.style.left);
-//     const y = parseInt(dot.style.top);
-//     const distance = Math.sqrt(Math.pow(x - window.innerWidth / 2, 2) + Math.pow(y - window.innerHeight / 2, 2));
-//     const maxDistance = Math.max(window.innerWidth, window.innerHeight) / 2;
-//     const percent = Math.max(1 - distance / maxDistance, 0);
-//     const opacity = percent * 0.5 + 0.1;
-//     dot.style.opacity = opacity;
-//     const speed = percent * 0.1;
-//     const angle = Math.atan2(y - window.innerHeight / 2, x - window.innerWidth / 2);
-//     const vx = Math.cos(angle) * speed;
-//     const vy = Math.sin(angle) * speed;
-//     const newX = x + vx;
-//     const newY = y + vy;
-//     dot.style.left = newX + 'px';
-//     dot.style.top = newY + 'px';
-//   });
-// }, 50);
-
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-const sliderValue = slider.value;
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  document.getElementById("lorem").style.left = sliderValue
-  output.innerHTML = sliderValue
-}
+  
