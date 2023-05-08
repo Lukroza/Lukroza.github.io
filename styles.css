@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .dot {
   position: absolute;
@@ -18,13 +19,17 @@ body {
 section {
   margin: left;
   text-align: center;
-  width: 50vh;
   min-height: 98vh;
-  min-width: 160vh;
   border: red dotted 1px;
 }
-#First {
+img {
   position: absolute;
+  right: 10%;
+  top: 20%;
+  height: 60vh;
+  width: 40vh;
+}
+#First {
   text-align: left;
   top: 350px;
   left: 150px;
@@ -39,12 +44,45 @@ section {
   transform: translateX(0);
   opacity: 1;
 }
+/*mebutinas topbar*/
 #TopBar {
-  position: absolute;
-  right: 10%;
-  word-spacing: 20px;
-  display: inline;
   border: 1px dotted red;
+  padding-right: 12vh;
+  background-image: url(images/Atasks.png);
+}
+nav {
+  margin: left;
+  text-align: right;
+  right: 1px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 7vh;
+}
+nav ul li a {
+  padding: 10px 20px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  transition: all 0.2s;
+}
+nav ul li a:hover {
+  border-color: red;
+}
+#Introduction {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  font-size: 4vh;
+  border: 1px red dotted;
+  width: 80vh;
+}
+h2 {
+  font-size: 10vh;
 }
 /*
 #lorem {
