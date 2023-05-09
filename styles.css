@@ -22,7 +22,7 @@ section {
   min-height: 98vh;
   border: red dotted 1px;
 }
-img {
+#IntroductionPhoto {
   right: 10%;
   top: 20%;
   position: absolute;
@@ -83,8 +83,45 @@ nav ul li a:hover {
   border: 1px red dotted;
   width: 40%;
 }
-h2 {
+h1 {
   font-size: 10vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#AboutContainer {
+  display: grid;
+  width: 150vh;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  border: 10px rgb(255, 255, 255) solid;
+  grid-template-columns: 70% 30%;
+}
+#ContainerText {
+  border: 5px black solid;
+  font-size: 4vh;
+  padding: 1%;
+  line-height: 6vh;
+  text-align: left;
+  font-size: 3vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#ContainerPhoto {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 6vh;
+  text-transform: uppercase;
+  font-weight: 1600;
+  letter-spacing: 30px;
+  color: #fff;
 }
 /*
 #lorem {
