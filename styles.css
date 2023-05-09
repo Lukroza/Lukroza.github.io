@@ -25,9 +25,9 @@ section {
 #IntroductionPhoto {
   right: 10%;
   top: 20%;
-  position: absolute;
-  height: 60vh;
-  width: 40vh;
+  position: fixed;
+  max-height: 60vh;
+  max-width: 40vh;
   transform: rotateZ(45deg);
   z-index: -1;
 }
@@ -92,7 +92,7 @@ h1 {
 }
 #AboutContainer {
   display: grid;
-  width: 150vh;
+  max-width: 150vh;
   margin: auto;
   position: fixed;
   top: 20%;
@@ -122,6 +122,7 @@ h2 {
   font-weight: 1600;
   letter-spacing: 30px;
   color: #fff;
+  border-bottom: 3px #fff solid;
 }
 /*
 #lorem {
