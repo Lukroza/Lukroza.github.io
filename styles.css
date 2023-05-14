@@ -95,6 +95,33 @@ h1 {
   height: 100%;
   max-width: 100%;
 }
+#ContainerPhoto2 {
+  position: relative;
+  top: 7%;
+  right: 2%;
+  border: 5px #1c1a1d solid;
+  object-fit: cover;
+  height: 90%;
+  max-width: 95%;
+}
+#ContainerVideo {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  border: 5px #1c1a1d solid;
+  object-fit: cover;
+  height: 90%;
+  max-width: 95%;
+}
+#hed {
+  grid-column: 1/3;
+}
+#PlayButton {
+  margin: auto;
+  height: 20vh;
+  width: 20vh;
+  border: 1px red solid;
+}
 h2 {
   text-align: center;
   padding: 10px;
