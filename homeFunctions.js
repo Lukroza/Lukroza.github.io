@@ -12,9 +12,6 @@ const observer = new IntersectionObserver((entries) => {
       // If the entry is intersecting, add the 'show' class to the entry's target element
       entry.target.classList.add('show');
       setTimeout(typeWrite, 2500);
-    }else{
-      // If the entry is not intersecting, remove the 'show' class from the entry's target element
-      entry.target.classList.remove('show');
     }
   })
 })
@@ -24,6 +21,9 @@ const hidden = document.querySelectorAll('.hid');
 // Loop through each 'hid' element and observe it with the IntersectionObserver
 hidden.forEach((el) => observer.observe(el));
 //Scrolling animation--------------------------
+
+
+
 
 
 
@@ -66,12 +66,12 @@ document.addEventListener('mousemove', (event) => {
 });
 
 var i =0;
-var text = `I'm currently a student at Kaunas University of Technology, where I'm studying software development. <br>
+var text = `I'm 
+currently a student at Kaunas University of Technology, where I'm studying software development. \n
 It's a field that I'm really passionate about.
-
 I'm always eager to learn more about programming, software engineering, and related topics.
 Currently, I'm mostly working with C# using the ASP.NET framework.
-I'm also spending a lot of my free time learning about Web Development.<br> It's
+I'm also spending a lot of my free time learning about Web Development.\n It's
 an area that I'm really interested in, and I'm eager to gain more knowledge.`
 var target = document.getElementById("cons").innerHTML;
 

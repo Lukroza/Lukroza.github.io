@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="homeFunctions.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Portfolio</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="homeFunctions.js"></script>
-</head>
-
-<body>
-  <div id="TopBar">
-    <nav>
-      <ul>
-        <li><a href="#CardContainer">About Me</a></li>
-        <li><a href="https://www.linkedin.com/in/lukas-zareckas" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Lukroza" target="_blank">GitHub</a></li>
-      </ul>
-    </nav>
-  </div>
-  </section>
-  <section class="hid">
-    <div id="Introduction">
-      <h1>Software Developer</h1>
-      <p>
-        Hello, I am Lukas Zareckas, Software development student
-      </p>
-      <img id="IntroductionPhoto" src="images/micro.jpg">
+  <body>
+    <div class="line-container">
+      <svg
+        width="699"
+        height="483"
+        viewBox="0 0 699 483"
+        fill="none"
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+        id="Wire0"
+      >
+        <g filter="url(#filter0_dd_1_120)">
+          <path
+            d="M557.333 11C557.333 16.891 562.109 21.6667 568 21.6667C573.891 21.6667 578.667 16.891 578.667 11C578.667 5.10896 573.891 0.333333 568 0.333333C562.109 0.333333 557.333 5.10896 557.333 11ZM693 143H695V142.203L694.452 141.625L693 143ZM693 296.5V298.5H695V296.5H693ZM6 296.5V294.5H4V296.5H6ZM566.548 12.3752L691.548 144.375L694.452 141.625L569.452 9.62482L566.548 12.3752ZM691 143V296.5H695V143H691ZM693 294.5H6V298.5H693V294.5ZM4 296.5V474.5H8V296.5H4Z"
+            fill="#42FF00"
+          />
+        </g>
+      </svg>
+      <svg
+        width="858"
+        height="1347"
+        viewBox="0 0 858 1347"
+        fill="none"
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+        id="Wire1"
+      >
+        <path
+          d="M489.333 11C489.333 16.891 494.109 21.6667 500 21.6667C505.891 21.6667 510.667 16.891 510.667 11C510.667 5.10896 505.891 0.333333 500 0.333333C494.109 0.333333 489.333 5.10896 489.333 11ZM563.5 71H565.5V70.1382L564.874 69.5463L563.5 71ZM563.5 307.5H561.5V309.5H563.5V307.5ZM855.5 307.5H857.5V305.5H855.5V307.5ZM855.5 1281.5V1283.5H857.5V1281.5H855.5ZM2 1281.5V1279.5H0V1281.5H2ZM498.626 12.4537L562.126 72.4537L564.874 69.5463L501.374 9.54629L498.626 12.4537ZM561.5 71V307.5H565.5V71H561.5ZM563.5 309.5H855.5V305.5H563.5V309.5ZM853.5 307.5V1281.5H857.5V307.5H853.5ZM855.5 1279.5H2V1283.5H855.5V1279.5ZM0 1281.5V1346.5H4V1281.5H0Z"
+          fill="#42FF00"
+        />
+      </svg>
     </div>
 
-  </section>
-
-  
-  <section>
-  <div class="card">
-    <div class="titlebar">
-      <span class="buttons">
-        <button class="minimize">
-          <svg x="0px" y="0px" viewBox="0 0 10.2 1">
-            <rect x="0" y="50%" width="10.2" height="1"></rect>
-          </svg>
-        </button>
-        <button class="maximize">
-          <svg viewBox="0 0 10 10">
-            <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
-          </svg>
-        </button>
-        <button class="close">
-          <svg viewBox="0 0 10 10">
-            <polygon
-              points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1">
-            </polygon>
-          </svg>
-        </button>
-      </span>
+    <div id="TopBar">
+      <nav>
+        <ul>
+          <li><a href="#CardContainer">About Me</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/lukas-zareckas" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Lukroza" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div id="CardContainer">
-      <div id="ContainerText">
-        <h2>About Me</h2>
-        <p id="cons">
-          <span id="Console">C:\User></span>
-        </p>
+    <section class="hid">
+      <div id="Introduction">
+        <h1>Software Developer</h1>
+        <p>Hello, I am Lukas Zareckas, Software development student</p>
+        <img id="IntroductionPhoto" src="images/micro.jpg" />
       </div>
-      <img id="ContainerPhoto" src="images/Photo.JPG" alt="">
-    </div>
-  </div>
-</section>
-<section class="hid">
-  <div class="card">
-    <div class="titlebar">
-      <span class="buttons">
-        <button class="minimize">
-          <svg x="0px" y="0px" viewBox="0 0 10.2 1">
-            <rect x="0" y="50%" width="10.2" height="1"></rect>
-          </svg>
-        </button>
-        <button class="maximize">
-          <svg viewBox="0 0 10 10">
-            <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
-          </svg>
-        </button>
-        <button class="close">
-          <svg viewBox="0 0 10 10">
-            <polygon
-              points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1">
-            </polygon>
-          </svg>
-        </button>
-      </span>
-    </div>
-    <div id="CardContainer">
-      <div id="hed">
-        <h2>Projects</h2>
-      </div>
-      <div id="ContainerText">
-        <p>
-          <span id="Console">C:\User></span>
-          I participated in the 48-hour-long KTU Game Jam event, where 10 teams composed of game developers and designers aimed to create a game from scratch. As a team member, I worked on the game logic, bug hunting, and testing. This allowed us to create an engaging and interesting game, which earned us fourth place.
-<br>
-During the event, I gained more knowledge about object-oriented programming in the C# language, Unity software, project management, teamwork, logical thinking, and creative decision-making. I also gained experience working with time constraints while maintaining high quality.
+    </section>
 
-        </p>
+    <section>
+      <div class="card">
+        <div class="titlebar">
+          <span class="buttons">
+            <button class="minimize">
+              <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+                <rect x="0" y="50%" width="10.2" height="1"></rect>
+              </svg>
+            </button>
+            <button class="maximize">
+              <svg viewBox="0 0 10 10">
+                <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+              </svg>
+            </button>
+            <button class="close">
+              <svg viewBox="0 0 10 10">
+                <polygon
+                  points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"
+                ></polygon>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div id="CardContainer">
+          <div id="ContainerText">
+            <h2>About Me</h2>
+            <p id="cons">
+              <span id="Console">C:\User></span>
+            </p>
+          </div>
+          <img id="ContainerPhoto" src="images/Photo.JPG" alt="" />
+        </div>
       </div>
-      <img id="ContainerPhoto2" src="images/GameJam.JPG" alt="">
-      <div id="ContainerText">
-        <video id="ContainerVideo" width="600" height="600" controls>
-          <source src="images/WIN.mkv">
-        </video>
-        <button>Play1</button>
+    </section>
+    <section class="hid">
+      <div class="card">
+        <div class="titlebar">
+          <span class="buttons">
+            <button class="minimize">
+              <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+                <rect x="0" y="50%" width="10.2" height="1"></rect>
+              </svg>
+            </button>
+            <button class="maximize">
+              <svg viewBox="0 0 10 10">
+                <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+              </svg>
+            </button>
+            <button class="close">
+              <svg viewBox="0 0 10 10">
+                <polygon
+                  points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"
+                ></polygon>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div id="CardContainer">
+          <div id="hed">
+            <h2>Projects</h2>
+          </div>
+          <div id="ContainerText">
+            <p>
+              <span id="Console">C:\User></span>
+              I participated in the 48-hour-long KTU Game Jam event, where
+              10teams composed of game developers and designers aimed to create
+              a game from scratch. As a team member, I worked on the game
+              logic,bug hunting, and testing. This allowed us to create an
+              engaging and interesting game, which earned us fourth place.
+              <br />
+              During the event, I gained more knowledge about object-oriented
+              programming in the C# language, Unity software, project
+              management, teamwork, logical thinking, and creative
+              decision-making. I also gained experience working with time
+              constraints while maintaining high quality.
+            </p>
+          </div>
+          <img id="ContainerPhoto2" src="images/GameJam.JPG" alt="" />
+          <div id="ContainerText">
+            <video id="ContainerVideo" width="650vh" height="650" controls>
+              <source src="images/WIN.mkv" />
+            </video>
+          </div>
+          <button id="PlayButton">Play Test</button>
+        </div>
       </div>
-      <button id="PlayButton">Play2</button>
-    </div>
-  </div>
-</section>
-</body>
-
+    </section>
+  </body>
 </html>
