@@ -31,12 +31,6 @@ section {
   transform: rotateZ(45deg);
   z-index: -1;
 }
-#First {
-  text-align: left;
-  top: 350px;
-  left: 150px;
-  border: red dotted 1px;
-}
 .hid {
   opacity: 0;
   transform: translateX(20%);
@@ -48,7 +42,7 @@ section {
 }
 /*mebutinas topbar*/
 #TopBar {
-  border: 1px dotted red;
+  border: 1px solid black;
   padding-right: 12vh;
   background-image: url(images/Atasks.png);
 }
@@ -75,12 +69,19 @@ nav ul li a {
 nav ul li a:hover {
   border-color: red;
 }
+.logo {
+  width: 65%;
+  position: absolute;
+  right: -25.6vh;
+  top: 72vh;
+  margin: auto;
+  z-index: -1;
+}
 #Introduction {
   position: fixed;
   left: 10%;
   top: 15%;
   font-size: 4vh;
-  border: 1px red dotted;
   width: 40%;
 }
 h1 {

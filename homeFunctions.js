@@ -1,3 +1,8 @@
+window.onload = function() {
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
+};
+
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
@@ -22,11 +27,43 @@ const hidden = document.querySelectorAll('.hid');
 hidden.forEach((el) => observer.observe(el));
 //Scrolling animation--------------------------
 
+//-------------------------------------
+// The real game-changer function responsible to fill svg as we scroll.
+drawOnScroll = () => {
+  // Get the id of the <path> element and the length of <path>
+  var path = document.getElementById("myPath");
+  var length = path.getTotalLength();
 
+  // The start position of the drawing
+  path.style.strokeDasharray = length;
+  // Hide the path by offsetting dash. Remove this line to show the path before scroll draw
+  path.style.strokeDashoffset = length;
 
+  // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as
+  // percentage scrolled
+  window.addEventListener("scroll", fillOnScroll);
 
+  function fillOnScroll() {
 
+      // This long calculation is just needed to find out the percentage of the webpage that has been scrolled.
+      // You don't need to worry about it much. Can be used as is all the time.
+      var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) /
+          (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
+      // Sets draw to (the progress of scroll multiplied by the length) to find exact offset.
+      var draw = length * scrollpercent * 2.3;
+      console.log(draw)
+
+      // In downward scroll, simply decreases the strokeDashOffset gradually towards zero.
+      // Reverse the drawing (when scrolling upwards)
+      path.style.strokeDashoffset = (length - draw);
+      console.log()
+  }
+}
+
+// Invoking the function once so that it set ups the event listener for scroll.
+drawOnScroll();
+//-------------------------------------
 
 const dots = [];
 document.addEventListener('mousemove', (event) => {
