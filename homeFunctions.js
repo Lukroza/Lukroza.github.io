@@ -25,7 +25,7 @@ const observer = new IntersectionObserver((entries) => {
 const hidden = document.querySelectorAll('.hid');
 // Loop through each 'hid' element and observe it with the IntersectionObserver
 hidden.forEach((el) => observer.observe(el));
-//Scrolling animation--------------------------
+//Scrolling animation-----------------------
 
 //-------------------------------------
 // The real game-changer function responsible to fill svg as we scroll.
