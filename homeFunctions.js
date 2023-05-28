@@ -7,7 +7,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
-//Scrolling animation--------------------------
+//Scrolling animation-------------------------
 // Create a new IntersectionObserver that takes a callback function as its argument
 const observer = new IntersectionObserver((entries) => {
   // Loop through each entry that the observer observes
