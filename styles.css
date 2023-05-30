@@ -70,10 +70,10 @@ nav ul li a:hover {
   border-color: red;
 }
 .logo {
-  width: 65%;
+  max-width: 150%;
   position: absolute;
-  right: -25.6vh;
-  top: 72vh;
+  right: -140vh;
+  top: 67vh;
   margin: auto;
   z-index: -1;
 }

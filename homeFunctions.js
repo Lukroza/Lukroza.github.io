@@ -51,7 +51,7 @@ drawOnScroll = () => {
           (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
       // Sets draw to (the progress of scroll multiplied by the length) to find exact offset.
-      var draw = length * scrollpercent * 2.3;
+      var draw = length * scrollpercent * 0.7;
       console.log(draw)
 
       // In downward scroll, simply decreases the strokeDashOffset gradually towards zero.
