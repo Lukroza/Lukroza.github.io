@@ -11,7 +11,12 @@ html {
   pointer-events: none;
 }
 body {
-  background-color: #464583;
+  background-color: #201a2e;
+  background-color: #71797e;
+  background-image: linear-gradient(#201a2e, #71797e);
+
+  background-attachment: fixed;
+  /*background-color: #1f1c2d;*/
   color: white;
   font-family: sans-serif;
   font-size: 32px;
@@ -20,7 +25,6 @@ section {
   margin: left;
   text-align: center;
   min-height: 98vh;
-  border: red dotted 1px;
 }
 #IntroductionPhoto {
   right: 10%;
@@ -42,9 +46,14 @@ section {
 }
 /*mebutinas topbar*/
 #TopBar {
-  border: 1px solid black;
+  border: 4px solid white;
   padding-right: 12vh;
-  background-image: url(images/Atasks.png);
+  background-color: #201a2e;
+  background: linear-gradient(135deg, #71797e55 25%, transparent 25%) -20px 0/
+      40px 40px,
+    linear-gradient(225deg, #71797e 25%, transparent 25%) -20px 0/ 40px 40px,
+    linear-gradient(315deg, #71797e55 25%, transparent 25%) 0px 0/ 40px 40px,
+    linear-gradient(45deg, #71797e 25%, #201a2e 25%) 0px 0/ 40px 40px;
 }
 nav {
   margin: left;
