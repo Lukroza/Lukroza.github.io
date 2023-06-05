@@ -12,49 +12,6 @@
   </head>
 
   <body>
-    <svg
-      id="Layer_1"
-      class="logo"
-      data-name="Layer 1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="-2400 -320 6962 4028"
-    >
-      <defs>
-        <style>
-          .cls-1-bg {
-            fill: none;
-            stroke-miterlimit: 5;
-            stroke-linejoin: round;
-            stroke-width: 8px;
-            stroke: url(#linear-gradient);
-            opacity: 1;
-            position: fixed;
-          }
-
-          .cls-1 {
-            fill: none;
-            stroke-miterlimit: 5;
-            stroke-linejoin: round;
-            stroke-width: 8px;
-            stroke: url(#linear-gradient);
-            position: fixed;
-          }
-        </style>
-        <linearGradient id="linear-gradient" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#42FF00" />
-          <stop offset="1" stop-color="#42FF00" />
-        </linearGradient>
-      </defs>
-      <title>Scroll SVG</title>
-      <path
-        class="cls-1"
-        id="myPath"
-        d="M -406 5 M 531 35 L 725 237 L 725 719 L -981 723 L -981 1097 M 162 27 Z M 587 -42 L 677 44 L 673 521 L 1073 521 L 1077 3027 L -969 3039 L -969 3276 M 961 1830"
-        fill="#42FF00"
-      />
-    </svg>
-
     <div id="TopBar">
       <nav>
         <ul>
@@ -74,7 +31,54 @@
       <div id="Introduction">
         <h1>Software Developer</h1>
         <p>Hello, I am Lukas Zareckas, Software development student</p>
-        <img id="IntroductionPhoto" src="images/micro.jpg" />
+        <div id="board">
+          <img id="IntroductionPhoto" src="images/micro.jpg" />
+          <svg
+            id="Layer_1"
+            class="logo"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="-2400 -320 6962 4028"
+          >
+            <defs>
+              <style>
+                .cls-1-bg {
+                  fill: none;
+                  stroke-miterlimit: 5;
+                  stroke-linejoin: round;
+                  stroke-width: 8px;
+                  stroke: url(#linear-gradient);
+                  opacity: 1;
+                  position: fixed;
+                }
+
+                .cls-1 {
+                  fill: none;
+                  stroke-miterlimit: 5;
+                  stroke-linejoin: round;
+                  stroke-width: 8px;
+                  stroke: url(#linear-gradient);
+                  position: fixed;
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#42FF00" />
+                <stop offset="1" stop-color="#42FF00" />
+              </linearGradient>
+            </defs>
+            <title>Scroll SVG</title>
+            <path
+              class="cls-1"
+              id="myPath"
+              d="M -406 5 M 531 35 L 725 237 L 725 719 L -981 723 L -981 1097 M 162 27 Z M 587 -42 L 677 44 L 673 521 L 1073 521 L 1077 3027 L -969 3039 L -969 3276 M 961 1830"
+              fill="#42FF00"
+            />
+          </svg>
+        </div>
       </div>
     </section>
 
@@ -161,7 +165,12 @@
               <source src="images/WIN.mkv" />
             </video>
           </div>
-          <button id="PlayButton">Play Test</button>
+          <button
+            id="PlayButton"
+            onclick="window.location.href='https://github.com/Lukroza/GameJam2023'"
+          >
+            Play Test
+          </button>
         </div>
       </div>
     </section>

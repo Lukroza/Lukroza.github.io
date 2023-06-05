@@ -65,42 +65,7 @@ drawOnScroll = () => {
 drawOnScroll();
 //-------------------------------------
 
-const dots = [];
-document.addEventListener('mousemove', (event) => {
-  const dot = document.createElement('div');
-  dot.className = 'dot';
-  dot.style.left = event.clientX + 'px';
-  dot.style.top = event.clientY + 'px';
-  document.body.appendChild(dot);
-  
-  const targetX = event.clientX + (Math.random() * 200 - 100);
-  const targetY = event.clientY + (Math.random() * 200 - 100);
-  const distance = Math.sqrt(Math.pow(targetX - event.clientX, 2) + Math.pow(targetY - event.clientY, 2));
-  const speed = 0.2;
-  const time = distance / speed;
-  const startX = event.clientX;
-  const startY = event.clientY;
-  let startTime = null;
 
-  function animateDot(timestamp) {
-    if (!startTime) startTime = timestamp;
-    const progress = timestamp - startTime;
-    const percent = Math.min(progress / time  , 1);
-    const currentX = startX + (targetX - startX) * percent;
-    const currentY = startY + (targetY - startY) * percent;
-    dot.style.left = currentX + 'px';
-    dot.style.top = currentY + 'px';
-    if (percent < 1) {  
-      requestAnimationFrame(animateDot);
-    } else {
-      document.body.removeChild(dot);
-    }
-  }
-
-  requestAnimationFrame(animateDot);
-  dots.push(dot);
-  
-});
 
 var i =0;
 var text = `I'm 

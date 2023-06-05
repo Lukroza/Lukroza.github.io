@@ -30,8 +30,18 @@ section {
   right: 10%;
   top: 20%;
   position: fixed;
-  max-height: 60vh;
-  max-width: 40vh;
+  height: 58vh;
+  width: 38vh;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+#IntroductionPhoto22 {
+  height: 600px;
+  width: 420px;
+  background-image: url(images/micro.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
   transform: rotateZ(45deg);
   z-index: -1;
 }
@@ -80,11 +90,10 @@ nav ul li a:hover {
 }
 .logo {
   max-width: 150%;
-  position: absolute;
-  right: -140vh;
-  top: 67vh;
-  margin: auto;
-  z-index: -1;
+  position: fixed;
+  right: -69%;
+  top: 56%;
+  z-index: -3;
 }
 #Introduction {
   position: fixed;
