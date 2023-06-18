@@ -67,28 +67,60 @@ drawOnScroll();
 
 
 
-var i =0;
-var text = `I'm 
-currently a student at Kaunas University of Technology, where I'm studying software development. \n
+var i = 0;
+var finished = false;
+var text = `I'm currently a student at Kaunas University of Technology, where I'm studying software development. \n
 It's a field that I'm really passionate about.
 I'm always eager to learn more about programming, software engineering, and related topics.
 Currently, I'm mostly working with C# using the ASP.NET framework.
 I'm also spending a lot of my free time learning about Web Development.\n It's
-an area that I'm really interested in, and I'm eager to gain more knowledge.`
-var target = document.getElementById("cons").innerHTML;
+an area that I'm really interested in, and I'm eager to gain more knowledge.`;
+
+var textProjects = `I participated in the 48-hour-long KTU Game Jam event, where 10
+teams composed of game developers and designers aimed to create a
+game from scratch. As a team member, I worked on the game
+logic, bug hunting, and testing. This allowed us to create an
+engaging and interesting game, which earned us fourth place.
+\n
+During the event, I gained more knowledge about object-oriented
+programming in the C# language, Unity software, project
+management, teamwork, logical thinking, and creative
+decision-making. I also gained experience working with time
+constraints while maintaining high quality.`;
+
+var target = document.getElementById("cons");
+typeWrite(text, target);
+
+function typeWrite(text, element) {
+  if (i < text.length) {
+    element.innerHTML += text[i];
+    i++;
+    setTimeout(typeWrite, 40, text, element);
+  } else {
+    if (!finished) {
+      finished = true;
+      i = 0;
+      var targetProjects = document.getElementById("cons2");
+      typeWriteProjects(textProjects, targetProjects);
+    }
+  }
+}
+
+function typeWriteProjects(text, element) {
+  if (i < text.length) {
+    element.innerHTML += text[i];
+    i++;
+    setTimeout(typeWriteProjects, 40, text, element);
+  }
+}
+
+
+
+
 
 function typeWait(){
   setTimeout(target += "/", 1000);
   setTimeout(target.substring(0, target.length-1), 1100);
-}
-function typeWrite(){
-  if(i < text.length){
-    
-    document.getElementById("cons").innerHTML += text[i];
-    i++;
-    setTimeout(typeWrite, 40);
-    if(i == 20){}
-  }
 }
 function typeDelete(){
   document.getElementById("cons").innerHTML = text + text[i].replace('_');
